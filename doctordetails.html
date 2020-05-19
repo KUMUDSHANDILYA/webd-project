@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<head>
+    <title>Search Doctors</title>
+    <style>
+        #dtop{
+            width: 100%;
+            height: 150px;
+            background-color:white;
+        }
+        #d02{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0,0,0,0.8);
+        }
+        #h01{
+            position: absolute;
+            top: -20px;
+            left: 150px;
+            font-size: 100px;
+            color: deepskyblue;
+        }
+        #contact1{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 10px;
+            font-size: 30px;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            border-color: rgba(0,0,0,0.8);
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .links{
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-color: white;
+            color: black;
+            border-radius: 10px;
+            position:absolute;
+            top: 165px;
+            text-decoration: none;
+        }
+        #patients{
+            position: absolute;
+            left: 20px;
+        }
+        #career{
+            left: 337px;
+        }
+        #about{
+            left:460px;
+        }
+        #emergency{
+            left: 158px;
+        }
+        #imge{
+             width: 100%;
+            height: 450px;
+            background-color:skyblue;
+            margin-top: 20px;
+        }
+         #dop{
+            height: 450px;
+            width: 100%;
+        }
+        #fdoc{
+            margin-top: 20px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        #map{
+            margin-left: 250px;
+        }
+        .dept{
+            border: solid black 1px;
+            margin-top: 20px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        .hmain{
+            font-size: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgba(0,0,0,0.8);
+            text-align: center;
+            color: white;
+            margin-top: 0px;
+        }
+        .fd1{
+            height: 450px;
+            width: 300px;
+            border: solid black 1px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+        }
+        .fd2{
+             height: 450px;
+            width: 300px;
+            border: solid black 1px;
+            position: absolute;
+            left: 510px;
+            margin-top: -480px;
+        }
+        .fd3{
+            height: 450px;
+            width: 300px;
+            border: solid black 1px;
+            position: absolute;
+            margin-top: -480px;
+            left: 900px;
+        }
+        .doci{
+            height: 300px;
+            width: 300px;
+        }
+        .fd1,.fd2,.fd3{
+            background-color: rgba(0,0,0,0.8);
+        }
+        .pdoc{
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        .links:hover{
+              background-color: black;
+            color: white;
+            cursor:pointer;
+        }
+        #contact1:hover{
+            background-color: deepskyblue;
+            cursor:pointer;
+        }
+    </style>
+    <script>
+        function myfunction1()
+        {
+            document.getElementById("div11").style.display="none";
+            document.getElementById("div12").style.display="none";
+            document.getElementById("div13").style.display="block";
+        }
+        function myfunction2()
+        {
+            document.getElementById("div11").style.display="none";
+            document.getElementById("div13").style.display="none";
+            document.getElementById("div12").style.display="block";
+        }
+        function myfunction3()
+        {
+            document.getElementById("div12").style.display="none";
+            document.getElementById("div13").style.display="none";
+            document.getElementById("div11").style.display="block";
+        }
+    </script>
+</head>
+<body>
+    <div id="dtop">
+        <img src="logo.jpg" height=140px>
+        <h1 id="h01">FortisCare</h1>
+        <a id="contact1" href="contact.html">Contact Us</a>
+    </div>
+    <div id="d02">
+        <b> <a class="links" id="patients" href="patients.html">Patients</a>
+            <a class="links" id="emergency" href="ERandUrgent.html">Emergency</a>
+        <a class="links" id="career" href="careers.html">Career</a>
+        <a class="links" id="about" href="aboutus.html">About Us</a>
+        </b>
+    </div>
+    <div id="imge">
+        <img src="image6.jpg" id="dop">
+    </div>
+    <div id="fdoc">
+        <img src="departments.jpg" id="map" usemap="#mymap">
+        <map name="mymap">
+            <area shape="rect" coords="0,0,170,200" onclick="myfunction1()">
+            <area shape="rect" coords="170,0,430,200" onclick="myfunction2()">
+            <area shape="rect" coords="430,0,600,200" onclick="myfunction3()">
+        </map>
+    </div>
+    <div class="dept" id="div11">
+        <h1 class="hmain">Family Medicine</h1>
+        <div class="fd1" id="div11">
+            <img class="doci" src="doc3.jpg">
+            <p class="pdoc"><b>Dr. Mayank Sharma</b><br>Family Medicine<br>023-876-1267</p>
+        </div>
+        <div class="fd2">
+            <img class="doci" src="doc1.jpg">
+            <p class="pdoc"><b>Dr. Swati Vashishtha</b><br>Family Medicine<br>023-563-0456</p>
+        </div>
+        <div class="fd3">
+            <img class="doci" src="doc2.jpg">
+            <p class="pdoc"><b>Dr. Andrew Smith</b><br>Family Medicine<br>032-764-9567</p>
+        </div>
+    </div>
+    <div class="dept" id="div12">
+        <h1 class="hmain">Cardiology</h1>
+        <div class="fd1">
+            <img class="doci" src="doc8.jpg">
+            <p class="pdoc"><b>Dr. Kamal Zain</b><br>Cardiologist<br>023-834-1267</p>
+        </div>
+        <div class="fd2">
+            <img class="doci" src="doc4.jpg">
+            <p class="pdoc"><b>Dr. Kannu Rana</b><br>Cardiologist<br>023-563-0266</p>
+        </div>
+        <div class="fd3">
+            <img class="doci" src="doc9.jpg">
+            <p class="pdoc"><b>Dr. Punit Garg</b><br>Cardiologist<br>032-284-0567</p>
+        </div>
+    </div>
+    <div class="dept" id="div13">
+        <h1 class="hmain">Orthopedic</h1>
+        <div class="fd1">
+            <img class="doci" src="doc5.jpg">
+            <p class="pdoc"><b>Dr. Neeti Saharan</b><br>Orthopedic<br>023-876-1267</p>
+        </div>
+        <div class="fd2">
+            <img class="doci" src="doc6.jpg">
+            <p class="pdoc"><b>Dr. Ishi Gupta</b><br>Orthopedic<br>023-563-0456</p>
+        </div>
+        <div class="fd3">
+            <img class="doci" src="doc7.jpg">
+            <p class="pdoc"><b>Dr. Jai Upadhyay</b><br>Orthopedic<br>032-764-9567</p>
+        </div>
+    </div>
+</body>
+</html>

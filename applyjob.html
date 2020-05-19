@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+    <title>Apply for job</title>
+    <style>
+        #dtop{
+            width: 100%;
+            height: 150px;
+            background-color:white;
+        }
+        #d02{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0,0,0,0.8);
+        }
+        #h01{
+            position: absolute;
+            top: -20px;
+            left: 150px;
+            font-size: 100px;
+            color: deepskyblue;
+        }
+        #contact1{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 10px;
+            font-size: 30px;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            border-color: rgba(0,0,0,0.8);
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .links{
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-color: white;
+            color: black;
+            border-radius: 10px;
+            position:absolute;
+            top: 165px;
+            text-decoration: none;
+        }
+        #patients{
+            position: absolute;
+            left: 20px;
+        }
+        #career{
+            left: 337px;
+        }
+        #about{
+            left:460px;
+        }
+        #emergency{
+            left: 158px;
+        }
+        .links:hover{
+              background-color: black;
+            color: white;
+            cursor:pointer;
+        }
+        #contact1:hover{
+            background-color: deepskyblue;
+            cursor:pointer;
+        }
+        #h001{
+            font-size: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgba(0,0,0,0.8);
+            text-align: center;
+            color: white;
+            margin-top: 0px;
+        }
+        .p001{
+            font-size: 25px;
+            margin: 40px;
+            color: rgba(0,0,0,0.8);
+            font-family:sans-serif;
+            color: rgba(0,0,0,0.8);
+            text-align: center;
+        }
+        #dform{
+            border: solid black 1px;
+            margin-top: 20px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .cll{
+            
+            font-size: 25px;
+            font-family:sans-serif;
+            color: rgba(0,0,0,0.8);
+            margin-left: 40px;
+            margin-right: 100px;
+        }
+        
+        .cii1{
+            font-size: 25px;
+            width: 500px;
+            margin-top: 20px;
+        }
+        .cll2{
+            font-size: 25px;
+            font-family:sans-serif;
+            color: rgba(0,0,0,0.8);
+        }
+        .cgg{
+            margin-left: 35px;
+        }
+        #i8{
+            font-size: 25px;
+            font-family:sans-serif;
+            color: rgba(0,0,0,0.8);
+            margin-top: 20px;
+            margin-left: -20px;
+        }
+        #i9{
+            margin-left: -40px;
+        }
+        #i13{
+            margin-left: 20px;
+        }
+        #i14{
+            margin-left: 25px;
+        }
+        #i15{
+            margin-left: 50px;
+        }
+        #i16{
+            margin-left: 64px;
+        }
+        #h2,#h3,#h4,#h5,#h6,#h7{
+            margin-left: 350px;
+        }
+        #submit{
+            font-size: 40px;
+            margin-left: 400px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        #job,#edu{
+            margin-left: 250px;
+        }
+    </style>
+    <script>
+        function myfunction()
+        {
+            var v1=document.forms["myform"]["fname"].value;
+            if(v1=="")
+                {
+                    alert("First name must be filled");
+                    return false;
+                }
+            var v2=document.forms["myform"]["lname"].value;
+            if(v2=="")
+                {
+                    alert("Last name must be filled");
+                    return false;
+                }
+            var v3=document.getElementById("g1");
+            var v4=document.getElementById("g2");
+            var v5=document.getElementById("g3");
+            if(v3.checked==false && v4.checked==false && v5.checked==false)
+                {
+                    alert("You must select your gender");
+                    return false;
+                }
+            var v7=document.getElementById("i9");
+            var v8=document.getElementById("i10");
+            var v9=document.getElementById("i11");
+            var v10=document.getElementById("i12");
+            if(v7.checked==false && v8.checked==false && v9.checked==false && v10.checked==false)
+                {
+                    alert("Please select your marital status");
+                    return false;
+                }
+            var v11=document.forms["myform"]["address"].value;
+            if(v11=="")
+                {
+                    alert("Please enter your local address");
+                    return false;
+                }
+            var v12=document.forms["myform"]["country"].value;
+            if(v12=="")
+                {
+                    alert("Please enter your country");
+                    return false;
+                }
+            var v13=document.forms["myform"]["state"].value;
+            if(v13=="")
+                {
+                    alert("Please enter your state");
+                    return false;
+                }
+            var v14=document.forms["myform"]["city"].value;
+            if(v14=="")
+                {
+                    alert("Please enter your city");
+                    return false;
+                }
+            var v15=document.forms["myform"]["mjob"].value;
+            if(v15="")
+                {
+                    alert("Please describe the job you are looking for");
+                }
+            var v16=document.forms["myform"]["educ"].value;
+            if(v16="")
+                {
+                    alert("Please enter your educational qualifications");
+                    return false;
+                }
+            alert("Your application has been submitted successfully. You will be sson notified about further steps. Thanks for applying at Fortis Care");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div id="dtop">
+        <img src="logo.jpg" height=140px>
+        <h1 id="h01">FortisCare</h1>
+        <a id="contact1" href="contact.html">Contact Us</a>
+    </div>
+    <div id="d02">
+        <b> <a class="links" id="patients" href="patients.html">Patients</a>
+            <a class="links" id="emergency" href="ERandUrgent.html">Emergency</a>
+        <a class="links" id="career" href="careers.html">Career</a>
+        <a class="links" id="about" href="aboutus.html">About Us</a>
+        </b>
+    </div>
+    <div id="dform">
+        <h1 id="h001">Apply for the job you are looking for</h1>
+        <p class="p001">We provide you the opportunity to grow your career with us.</p>
+        <form name="myform" onsubmit="return myfunction()">
+            <label id="l1" class="cll">First Name</label>
+            <input type="text" id="in1" name="fname" class="cii1"><br>
+            <label id="l2" class="cll">Last Name</label>
+            <input type="text" id="in2" name="lname" class="cii1"><br><br>
+            <label id="l3" class="cll">Gender</label>
+            <input type="radio" name="gender" value="male" id="g1" class="cgg">
+            <label id="l4" class="cll2">Male</label>
+            <input type="radio" name="gender" value="female" id="g2" class="cgg">
+            <label id="l5" class="cll2">Female</label>
+            <input type ="radio" name="gender" value="other" id="g3" class="cgg">
+            <label id="l6" class="cll2">Other</label><br>
+            <label class="cll" id="l7">Phone No.</label>
+            <input type="number" id="i3" name="phone" class="cii1"><br>
+            <label id="l7" class="cll">Date of Birth</label>
+            <input type="date" id="i8" name="dob"><br><br>
+            <label id="l8" class="cll">Marital Status</label>
+            <input id="i9" type="radio" name="ms" value="single" class="cgg">
+            <label id="l9" class="cll2">Single</label>
+            <input id="i10" type="radio" name="ms" value="married" class="cgg">
+            <label id="l10" class="cll2">Married</label>
+            <input id="i11" type="radio" name="ms" value="divorced" class="cgg">
+            <label id="l11" class="cll2">Divorced</label>
+            <input id="i12" type="radio" name="ms" value="widow" class="cgg">
+            <label id="l12" class="cll2">Widow</label><br>
+            <label id="l13" class="cll">Address</label>
+            <input type="text" class="cii1" id="i13" name="address"><br>
+            <label id="l14" class="cll">Country</label>
+            <input id="i14" class="cii1" type="text" name="country"><br>
+            <label id="l15" class="cll">State</label>
+            <input id="i15" class="cii1" type="text" name="state"><br>
+            <label id="l16" class="cll">City</label>
+            <input id="i16" class="cii1" type="text" name="city"><br><br>
+            <label id="l17" class="cll">Medical History</label>
+            <input type="radio" name="medhis" value="anemia" id="h1" class="cgg">
+            <label id="l18" class="cll2">Anemia</label><br>
+            <input type="radio" name="medhis" value="asthma" id="h2" class="cgg">
+            <label id="l19" class="cll2">Asthama</label><br>
+            <input type="radio" name="medhis" value="bronchitis" id="h3" class="cgg">
+            <label id="l20" class="cll2">Bronchitis</label><br>
+            <input type="radio" name="medhis" value="chickenpox" id="h4" class="cgg">
+            <label id="l21" class="cll2">Chickenpox</label><br>
+            <input type="radio" name="medhis" value="diabetes" id="h5" class="cgg">
+            <label id="l22" class="cll2">Diabetes</label><br>
+            <input type="radio" name="medhis" value="pneumonia" id="h6" class="cgg">
+            <label id="l23" class="cll2">Pneumonia</label><br>
+            <input type="radio" name="medhis" value="other" id="h7" class="cgg">
+            <label id="l24" class="cll2">Other</label><br>
+            <label id="l25" class="cll">Describe the job you are looking for</label><br>
+            <input type="text" id="job" name="mjob" class="cii1"><br>
+            <label id="l26" class="cll">Enter your educational qualifications</label><br>
+            <input type="text" id="edu" name="educ" class="cii1"><br>
+            <p  class="cll">I hereby agree that before filling the form I have carefully read about the hiring process at Fortis Care and I know that filling this form does not guarentee my recruitment at Fortis Care. My recruitment will be decided by the test conduted by the institute, my educational status and after verification of all the information provided by me. If any of this information is found wrong, my application would be rejected.</p>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <title>Track Me</title>
+    <style>
+        #dtop{
+            width: 100%;
+            height: 150px;
+            background-color:white;
+        }
+        #d02{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(0,0,0,0.8);
+        }
+        #h01{
+            position: absolute;
+            top: -20px;
+            left: 150px;
+            font-size: 100px;
+            color: deepskyblue;
+        }
+        #contact1{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 10px;
+            font-size: 30px;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            border-color: rgba(0,0,0,0.8);
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .links{
+            font-size: 30px;
+            background-color: white;
+            padding: 10px;
+            border-color: white;
+            color: black;
+            border-radius: 10px;
+            position:absolute;
+            top: 165px;
+            text-decoration: none;
+        }
+        #patients{
+            position: absolute;
+            left: 20px;
+        }
+        #career{
+            left: 337px;
+        }
+        #about{
+            left:460px;
+        }
+        #emergency{
+            left: 158px;
+        }
+        .links:hover{
+              background-color: black;
+            color: white;
+            cursor:pointer;
+        }
+        #contact1:hover{
+            background-color: deepskyblue;
+            cursor:pointer;
+        }
+        #imge{
+             width: 100%;
+            height: 450px;
+            background-color:skyblue;
+            margin-top: 20px;
+        }
+         #dop{
+            height: 450px;
+            width: 100%;
+        }
+        #tme{
+            border: solid black 1px;
+            height: 500px;
+            margin-top: 20px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        #ht01{
+            font-size: 80px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: skyblue;
+            text-align: center;
+            color: deeppink;
+            margin-top: 0px;
+            font-family: cursive;
+        }
+        .pt01{
+            font-size: 25px;
+            margin: 40px;
+            color: rgba(0,0,0,0.8);
+            font-family:sans-serif;
+        }
+        #sp1{
+            font-size: 30px;
+            margin: 40px;
+            color: deeppink;
+            font-weight:bold;
+        }
+        #sp2{
+            font-size: 30px;
+            margin-left: 400px;
+            color: deeppink;
+            font-weight: bold;
+        }
+        #logi{
+            font-size: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: limegreen;
+            position: absolute;
+            top: 1100px;
+            left: 180px;
+            box-shadow: 5px 5px yellowgreen;
+            text-decoration: none;
+        }
+        #signu{
+            font-size: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: limegreen;
+            box-shadow: 5px 5px yellowgreen;
+            position: absolute;
+            top: 1100px;
+            left:940px;
+            text-decoration: none;
+        }
+        #signu:hover,#logi:hover{
+            cursor: pointer;
+            box-shadow: 0 0;
+        }
+        #icon{
+            position: absolute;
+            left: 580px;
+            top: 1060px;
+            height: 150px;
+            width: 150px
+        }
+    </style>
+</head>
+<body>
+    <div id="dtop">
+        <img src="logo.jpg" height=140px>
+        <h1 id="h01">FortisCare</h1>
+        <a id="contact1" href="contact.html">Contact Us</a>
+    </div>
+    <div id="d02">
+        <b> <a class="links" id="patients" href="patients.html">Patients</a>
+            <a class="links" id="emergency" href="ERandUrgent.html">Emergency</a>
+        <a class="links" id="career" href="careers.html">Career</a>
+        <a class="links" id="about" href="aboutus.html">About Us</a>
+        </b>
+    </div>
+    <div id="imge">
+        <img src="track.jpg" id="dop">
+    </div>
+    <div id="tme">
+        <h1 id="ht01">Track Me</h1>
+        <p class="pt01">Track Me is a new electronic health record system that allows us to meet you needs better. The patient portal allows you to keep a track of your health records and appointments. If you already have an account, log in using your credentials else create a new account.</p>
+        <span id="sp1">Already have an account?</span>
+        <span id="sp2">Don't have an account yet?<br></span>
+        <a id="logi" href="trackmelogin.html">Log in</a>
+        <a id="signu" href="tracksignup.html">Sign up</a>
+        <img src="icon16.jpg" id="icon">
+    </div>
+</body>
+</html>
